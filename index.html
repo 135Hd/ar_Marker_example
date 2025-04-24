@@ -21,12 +21,11 @@
   <h1>Test</h1>
   <div>
  <a-scene embedded arjs="trackingMethod: best;" vr-mode-ui="enabled: false">
+   <a-assets>
+	<a-asset-item id="rose" src="/assets/rose.glb"></a-asset-item>
+</a-assets>
     <a-marker preset="hiro">
-      <a-entity 
-          src="http://135hd.github.io/ar_Marker_example/assets/rose.glb"
-          scale="0.5 0.5 0.5" 
-          position="0 0.5 0">
-      </a-entity>
+      <a-entity gltf-model="#rose"></a-entity>
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
